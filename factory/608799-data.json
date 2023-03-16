@@ -1,0 +1,9 @@
+{
+	"name": "608799-data",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "8a30bfe6-46e5-4ce9-9f04-b2f0aed452c7",
+		"tenantId": "b56b1b99-9fb7-4fa8-a69a-55f4f3cf3206"
+	}
+}
