@@ -1,0 +1,48 @@
+{
+	"name": "dataflow2",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "AzureSqlTable1",
+						"type": "DatasetReference"
+					},
+					"name": "Databasebankraw"
+				}
+			],
+			"sinks": [],
+			"transformations": [],
+			"scriptLines": [
+				"source(output(",
+				"          CLIENTNUM as integer,",
+				"          Attrition_Flag as string,",
+				"          Customer_Age as integer,",
+				"          Gender as string,",
+				"          Dependent_count as integer,",
+				"          Education_Level as string,",
+				"          Marital_Status as string,",
+				"          Income_Category as string,",
+				"          Card_Category as string,",
+				"          Months_on_book as integer,",
+				"          Total_Relationship_Count as integer,",
+				"          Months_Inactive_12_mon as integer,",
+				"          Contacts_Count_12_mon as integer,",
+				"          Credit_Limit as double,",
+				"          Total_Revolving_Bal as integer,",
+				"          Avg_Open_To_Buy as double,",
+				"          Total_Amt_Chng_Q4_Q1 as double,",
+				"          Total_Trans_Amt as integer,",
+				"          Total_Trans_Ct as integer,",
+				"          Total_Ct_Chng_Q4_Q1 as double,",
+				"          Avg_Utilization_Ratio as double",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     isolationLevel: 'READ_UNCOMMITTED',",
+				"     format: 'table') ~> Databasebankraw"
+			]
+		}
+	}
+}
