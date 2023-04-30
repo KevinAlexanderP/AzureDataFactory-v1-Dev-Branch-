@@ -1,0 +1,21 @@
+{
+	"name": "Filtered_on_Transactions",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1itretail",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
