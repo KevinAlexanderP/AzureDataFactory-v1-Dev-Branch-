@@ -988,7 +988,7 @@
 						"     validateSchema: false,",
 						"     isolationLevel: 'READ_UNCOMMITTED',",
 						"     format: 'table') ~> Databasebankraw",
-						"Databasebankraw filter(Total_Trans_Amt>138) ~> filter1",
+						"Databasebankraw filter(Total_Trans_Ct>130) ~> filter1",
 						"filter1 sink(allowSchemaDrift: true,",
 						"     validateSchema: false,",
 						"     skipDuplicateMapInputs: true,",
