@@ -18,7 +18,7 @@
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"annotations": [],
-				"runtimeState": "Stopped",
+				"runtimeState": "Started",
 				"pipelines": [
 					{
 						"pipelineReference": {
@@ -31,11 +31,10 @@
 				"type": "ScheduleTrigger",
 				"typeProperties": {
 					"recurrence": {
-						"frequency": "Day",
-						"interval": 2,
-						"startTime": "2023-04-30T01:43:00",
-						"timeZone": "Central Standard Time (Mexico)",
-						"schedule": {}
+						"frequency": "Minute",
+						"interval": 10,
+						"startTime": "2023-04-30T01:47:00",
+						"timeZone": "Central Standard Time (Mexico)"
 					}
 				}
 			},
