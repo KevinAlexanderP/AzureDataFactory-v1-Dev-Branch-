@@ -246,7 +246,7 @@
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobStorageLocation",
-						"container": "filteredchurns"
+						"container": "data"
 					},
 					"columnDelimiter": ",",
 					"escapeChar": "\\",
