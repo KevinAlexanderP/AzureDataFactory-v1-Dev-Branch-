@@ -13,7 +13,11 @@
 				}
 			],
 			"sinks": [],
-			"transformations": [],
+			"transformations": [
+				{
+					"name": "filter1"
+				}
+			],
 			"scriptLines": [
 				"source(output(",
 				"          CLIENTNUM as integer,",
@@ -41,7 +45,8 @@
 				"     allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     isolationLevel: 'READ_UNCOMMITTED',",
-				"     format: 'table') ~> Databasebankraw"
+				"     format: 'table') ~> Databasebankraw",
+				"Databasebankraw filter(Total_Trans_Amt>10) ~> filter1"
 			]
 		}
 	}
